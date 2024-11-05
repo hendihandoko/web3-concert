@@ -13,12 +13,10 @@ contract ConcertManagerTest is Test {
 
     // Sample test case in ConcertManager.t.sol
     function testCreateConcert() public {
-    concertManager.createConcert("Artist", "Venue", block.timestamp + 1 weeks, 1 ether, 1);
+        concertManager.createConcert("Artist", "Venue", block.timestamp + 1 weeks, 1 ether, 1);
 
-    // Assert that the concert count has incremented
-    uint256 currentConcertCount = concertManager.concertCount(); // Assuming concertCount is public or you have a getter
-    assertEq(currentConcertCount,  1); // Check if the concert count is now 1
-
+        // Assert that the concert count has incremented
+        uint256 currentConcertCount = concertManager.concertCount(); // Assuming concertCount is public or you have a getter
+        assertEq(currentConcertCount, 1); // Check if the concert count is now 1
     }
 }
-
