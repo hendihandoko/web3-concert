@@ -12,3 +12,8 @@ docs/
 
 # Dotenv file
 .env
+
+# Ignore directories related to testing and utilities
+lib/ds-test/
+lib/erc4626-tests/
+lib/halmos-cheatcodes/
